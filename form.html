@@ -46,5 +46,37 @@
 
       <input type="button" value="Daftar" />
     </form>
+
+    <hr />
+
+    <h1>Pesanan</h1>
+    <form action="/order">
+      <label for="baju">Baju</label>
+      <div>
+        <label for="kemeja">Kemeja</label>
+        <input type="radio" name="baju" id="kemeja" value="kemeja" checked />
+        <!-- checked berfungsi untuk memberikan nilai default pada radio button -->
+        <label for="kaos">Kaos</label>
+        <input type="radio" name="baju" id="kaos" value="kaos" />
+      </div>
+
+      <div>
+        <label for="size">Ukuran</label>
+        <select name="size" id="size">
+          <option value="s">Small</option>
+          <option value="m" selected>Medium</option>
+          <!-- selected berfungsi untuk memberikan nilai default pada select -->
+          <option value="l">Large</option>
+          <option value="xl">Extra Large</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="term">Order sesuai pesanan</label>
+        <input type="checkbox" name="term" id="term" checked />
+        <!-- checked berfungsi untuk memberikan nilai default pada checkbox -->
+      </div>
+      <button type="submit">Order</button>
+    </form>
   </body>
 </html>
