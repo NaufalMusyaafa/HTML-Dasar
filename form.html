@@ -9,6 +9,7 @@
     <h1>Formulir Isian</h1>
     <form action="daftar" method="post">
       <button type="button">tombol biasa</button>
+      <!-- tipe button biasa tidak akan mengirimkan data ke server -->
 
       <div>
         <label for="name">Nama Lengkap</label>
@@ -19,8 +20,6 @@
         <label for="email">Email</label>
         <input type="email" placeholder="Email" id="email" name="email" />
       </div>
-
-      <button>Jangan Kirim Lagi</button>
 
       <div>
         <label for="password">Password</label>
@@ -43,6 +42,7 @@
       </div>
 
       <button type="submit">Kirim</button>
+      <!-- button submit akan mengirimkan data ke server -->
 
       <input type="button" value="Daftar" />
     </form>
@@ -85,6 +85,18 @@
       </div>
 
       <button type="submit">Order</button>
+    </form>
+
+    <hr />
+
+    <h1>Validasi</h1>
+    <form action="valid">
+      <input type="text" name="input" required minlength="3" maxlength="6" />
+      <!-- required berfungsi untuk membuat inputan menjadi wajib diisi, minlength
+      berfungsi untuk menentukan jumlah karakter minimal, dan maxlength
+      berfungsi untuk menentukan jumlah karakter maksimal. -->
+      <input type="number" name="number" id="number" min="1" max="10" />
+      <button type="submit">Kirim</button>
     </form>
   </body>
 </html>
